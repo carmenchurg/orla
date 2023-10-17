@@ -1,0 +1,104 @@
+*{
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --image-border-radius: 50%;
+    --image-width: 200px;
+    --image-height: 200px;
+    --margin: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    */
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #293949;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px;
+    /* Ajusta el tamaño del logo según tus necesidades */
+    height: 300px;
+    border-radius: 50%;
+    /*margin-bottom: 10px;*/
+}
+
+.profesores{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1em;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1em;
+}
+
+.miembro {
+    background-color: #fadca9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    height: 350px;
+}
+
+
+
+
+.miembro h3 {
+  
+    font-size: 1.2em;
+}
+
+.miembro p {
+    
+    color:rgb(70, 50, 27);
+    font-weight:bold;
+}
+
+.foto {
+    position: relative;
+}
+
+.miembro img {
+    width: var(--image-width);
+    height: var(--image-height);
+    border-radius: var(--image-border-radius);
+    margin: 0 auto var(--margin);
+    border: solid 10px #293949;
+}
+
+
+.imagen-normal{
+}
+
+.imagen-hover {
+    display: none;
+}
+
+.foto:hover .imagen-normal {
+    display: none;
+}
+
+.foto:hover .imagen-hover {
+    display: block;
+}
+
